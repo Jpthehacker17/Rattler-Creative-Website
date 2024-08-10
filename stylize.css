@@ -1,0 +1,257 @@
+/* Define the custom font */
+@font-face {
+    font-family: 'The Bold Font';
+    src: url('THE BOLD FONT - FREE VERSION - 2023.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+    font-family: 'The Bold Font', sans-serif;
+    margin: 0;
+    background-color: #121212;
+    color: #fff;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #1a1919;
+}
+
+header .logo {
+    display: flex;
+    align-items: center;
+}
+
+header .logo .jpg,
+header .logo .png {
+    height: 50px;
+    margin-right: 20px;
+    transition: 0.2s;
+    border-radius: 20px;
+}
+
+header .logo .jpg:hover,
+header .logo .png:hover {
+    transform: scale(1.2);
+    box-shadow: 10px 10px 50px rgba(255, 255, 255, 0.69);
+}
+
+header .Shary {
+    transition: 0.2s;
+    border-radius: 20px;
+}
+
+header .Shary:hover {
+    width: 120px;
+    box-shadow: 10px 10px 50px rgba(255, 255, 255, 0.69);
+}
+
+nav ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 18px;
+    transition: 0.2s;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+    text-shadow: 10px 10px 50px white;
+    font-size: 22px;
+}
+
+.title {
+    text-align: center;
+    padding: 100px 5px; 
+    background: url('photo1.jpg') no-repeat center center;
+    background-size: cover;
+    margin-top: 20px;
+}
+
+.title-content {
+    margin-top: 20px;
+    animation: smoothIn 0.5s;
+}
+
+.title-content h1 {
+    font-size: 55px;
+    text-shadow: -5px 5px 0px black;
+}
+
+.image-container {
+    margin: 20px auto;
+}
+
+.head_buttons {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 40px; 
+}
+
+.head_buttons button {
+    margin: 20px;
+    padding: 10px 20px;
+    font-size: 25px;
+    font-family: 'The Bold Font', sans-serif;
+    border: none;
+    cursor: pointer;
+    border-radius: 10px;
+    transition: 0.2s;
+}
+
+.head_buttons .one {
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+}
+
+.head_buttons .one:hover {
+    font-size: 30px;
+    box-shadow: 10px 10px 60px rgb(255, 0, 0);
+}
+
+.head_buttons .join {
+    background-color: rgb(60, 60, 60);
+    color: rgb(255, 255, 255);
+}
+
+.head_buttons .join:hover {
+    font-size: 30px;
+    box-shadow: 10px 10px 60px rgb(255, 255, 255);
+}
+
+.head_buttons .two {
+    background-color: red;
+    color: white;
+}
+
+.head_buttons .two:hover {
+    font-size: 30px;
+    box-shadow: 10px 10px 60px rgb(255, 255, 255);
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #121212;
+}
+
+.about-us {
+    background-color: #121212;
+    padding: 20px;
+    color: #fff;
+}
+
+.about-us .content {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    margin-bottom: 20px; 
+}
+
+.about-us img {
+    max-width: 100%; 
+    height: auto;
+}
+
+.about-us .dec {
+    max-width: 50%; 
+    margin-left: 20px; 
+    text-align: left;
+    margin-top: 160px;
+    word-spacing: 7px;
+    line-height: 20px;
+ 
+}
+
+.about-us .images {
+    display: flex;
+    justify-content: center; 
+    gap: 10px; 
+    
+}
+
+.about-us .images .img {
+    width: 100px; 
+    height: auto;
+}
+
+footer .contact {
+    text-decoration: underline;
+    
+}
+@keyframes smoothIn {
+    from {
+      opacity: 0;
+      transform: scale(0.9);
+    }
+    to {
+      opacity: 1;
+      transform: scale(1);
+    }
+  }
+  
+  header {
+   
+    animation: smoothIn 0.5s ease-out;
+  }
+  
+
+@media (max-width: 768px) {
+    .title-content h1 {
+        font-size: 40px;
+    }
+
+    .head_buttons button {
+        font-size: 20px;
+    }
+
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav ul li {
+        margin: 10px 0;
+    }
+
+    .about-us .content {
+        flex-direction: column; 
+        align-items: center; 
+    }
+
+    .about-us .dec {
+        margin-left: 0; 
+        text-align: center; 
+    }
+
+    .about-us .images {
+        flex-direction: column; 
+    }
+}
+
+@media (max-width: 480px) {
+    .title-content h1 {
+        font-size: 30px;
+    }
+
+    .head_buttons button {
+        font-size: 18px;
+    }
+}
+
